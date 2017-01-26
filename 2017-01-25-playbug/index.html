@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>playbug</title>
+    <link rel="shortcut icon" href="images/ladybug.png" />
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/codemirror/lib/codemirror.css" rel="stylesheet">
+    <link href="vendor/codemirror/theme/eclipse.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+
+  <body class="flex-col">
+    <div class="header no-wrap">
+      <img class="playbug" src="images/ladybug.png" width="32"/>
+      <a href="#" class="btn btn-primary btn-sm" role="button">sessions</a>
+      <a href="#" class="btn btn-success btn-sm" role="button">steps</a>
+      <a href="#" class="btn btn-primary btn-sm" role="button">scripts</a>
+      <a href="#" class="btn btn-primary btn-sm" role="button">functions</a>
+      <a href="#" class="btn btn-primary btn-sm" role="button">vars</a>
+      <a href="#" class="btn btn-primary btn-sm" role="button">settings</a>
+    </div>
+
+    <div class="tab-header no-wrap">
+      <span title="/usr/local/bin/node /Users/pmuellr/Projects/playbug/samples/left-pad.js"><b>command:</b> /usr/local/bin/node /Users/pmuellr/Projects/playbug/samples/left-pad.js</span><br>
+      <b>date:</b> 2017-01-21 20:19:59; <b>node:</b> v6.9.2; <b>platform:</b> darwin/x64<br>
+      <b>steps:</b> 42; <b>seconds</b>: 43; <b>scripts</b>: 44; <b>functions</b>: 45; <b>vars</b>: 46
+    </div>
+
+    <div class="body flex-grow">
+      <div class="nav"></div>
+      <div class="main flex-col">
+        <div class="editor-header">
+          <span class="editor-name"></span>
+          <div class="buttons">
+            <a id="left-arrow-button" href="#" class="btn btn-primary btn-xs" role="button">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a id="right-arrow-button" href="#" class="btn btn-primary btn-xs" role="button">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <div class="editor flex-grow"></div>
+      </div>
+    </div>
+
+    <div class="footer no-wrap">
+      <span class="float-right">
+        <a href="http://example.com" target="blank">help</a>
+        -
+        <a href="http://example.com" target="blank">source</a>
+        -
+        playbug x.y.z
+      </span>
+    </div>
+
+    <script src='vendor/jquery/jquery.min.js'></script>
+    <script src='vendor/d3/d3.min.js'></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/codemirror/lib/codemirror.js"></script>
+    <script src="vendor/codemirror/mode/javascript/javascript.js"></script>
+    <script src="vendor/vue/vue.min.js"></script>
+    <script src="vendor/vue-router/vue-router.min.js"></script>
+    <script src="modules.js"></script>
+  </body>
+</html>
