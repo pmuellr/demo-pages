@@ -15,7 +15,7 @@ function loadSession (sessionName, cb) {
 
 // get the text of a session
 function getSessionText (sessionName, cb) {
-  const xhr = jQuery.get('/api/session/my.playbug', null, (data, status) => {
+  const xhr = jQuery.get('api/session/my.playbug', null, (data, status) => {
     cb(null, data)
   }, 'text')
 
